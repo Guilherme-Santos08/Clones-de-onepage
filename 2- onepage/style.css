@@ -12,6 +12,10 @@
    font-family: "Poppins", sans-serif;
 }
 
+body {
+   background-color: #fff;
+}
+
 .header {
    display: flex;
    justify-content: space-between;
@@ -23,18 +27,141 @@
 .header__Logo {
    color: #EC6C6B;
 
+   font-weight: 600;
    font-size: 1.5rem;
    text-decoration: none;
 }
 
-.header__nav{
+.header__ul{
    display: flex;
    list-style: none;
+
+   position: relative;
 }
+
 
 .header__navlinks{
    color: #051B2C;
 
    text-decoration: none;
    margin-right: 20px;
+   transition: all .1s ease-in-out;
+
+   list-style: none;
+}
+
+.header__navlinks:hover {
+   color: #EC6C6B;
+}
+
+.header--btn1 {
+   margin-right: 13px;
+
+   border: none;
+   outline: none;
+   cursor: pointer;
+   background-color: #fff;
+
+   transition: all .1s ease-in-out;
+}
+
+.header--btn1:hover {
+   color: #EC6C6B;
+}
+
+.header--btn2 {
+   padding: 8px;
+   font-weight: 700;
+
+   color: #EC6C6B;
+   background-color: #fff;
+   cursor: pointer;
+   
+   border: solid 1px #dcdee0;
+
+   transition: all .1s ease-in-out;
+}
+
+.header--btn2:hover {
+   color: #E24C51;
+}
+
+.container {
+   display: flex;
+   margin: 10rem 3.5rem 0 3.5rem;
+}
+
+.container__section {
+   width: 440px;
+   margin-right: 16rem;
+}
+
+.container__span {
+   font-size: 1rem;
+   font-weight: 500;
+
+   color: #EC6C6B;
+   text-transform: uppercase;
+}
+
+.container__title {
+   font-size: 3.8rem;
+
+   margin-top: 10px;
+
+   line-height: 4.5rem;
+   color: #051B2C;
+}
+
+.container__desc{
+   font-size: 1rem;
+   font-weight: 500;
+   color: #051B2C;
+
+   margin-top: 10px;
+}
+
+.container__btn{
+   margin-top: 20px;
+}
+
+.container--btn1 {
+   font-weight: 500;
+   margin-right: 10px;
+   padding: 8px;
+
+   border-radius: 6px;
+   color: white;
+   background-color: #E24C51;
+
+   border: none;
+   outline: none;
+   cursor: pointer;
+
+   transition: all .1s ease-in-out;
+}
+
+.container--btn1:hover {
+   background-color: #EC6C6B;
+}
+
+.container--btn2 {
+   font-weight: 500;
+   padding: 8px;
+
+   border-radius: 6px;
+   color: #E24C51;
+   background-color: #fff;
+
+   border: solid 1px #dcdee0;
+   outline: none;
+   cursor: pointer;  
+}
+
+.container--btn2:hover {
+   color: #EC6C6B;
+}
+
+.container__image img {
+   width: 40rem;
 }
